@@ -1,0 +1,54 @@
+.scrollN, .scrollN:hover {
+    font-size: 1em;
+}
+
+.small-screen {
+  background-color: black;
+}
+
+.font {
+  font-family: "Gravity-Regular";
+  font-weight: bolder;
+  font-synthesis: weight;
+  color: GhostWhite !important;
+}
+
+.navbar-nav li {
+  -webkit-transition : all .7s wase-out;
+  transition: all .7s ease-out;
+}
+
+.navbar-nav li:hover {
+  background-color: rgba(220, 220, 220, 0.1);
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .transparent {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #global-nav {
+        height: 120px;
+        -webkit-transition: height .5s, line-height .5s;
+        transition: height .5s, line-height .5s;
+    }
+    .scrolled-nav {
+        background-color: #222222;
+        height: 60px !important;
+        line-height: 60px;
+    }
+    .counter {
+      width: 20px;
+      height: 20px;
+      background: black;
+      color: #fff;
+      position: fixed;
+      top: 120px;
+      right: 0;
+    }
+    .navbar-nav li, .navbar-brand {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
