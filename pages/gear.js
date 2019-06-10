@@ -1,51 +1,29 @@
 import Layout from "../components/MyLayout.js";
-import Markdown from "react-markdown";
-const dipshoot = `# Live demo
+import Prism from "prismjs";
 
-Changes are automatically rendered as you type.
+const code = `function escapeTxtInCodeTag($txt) {
+ $callback = function($matches) {
+   return '<code' . $matches[1] . '>' . htmlentities($matches[2], ENT_QUOTES, 'UTF-8') . '</code>';
+ };
+ $txt = preg_replace_callback('#\<\s*code(.*?)>(.+?)<\s*\/code\s*>#', $callback, $txt);
+ return $txt;
+}`;
+const html = Prism.highlight(code, Prism.languages.javascript, 'javascript');
+console.log(html);
 
-* Implements [GitHub Flavored Markdown](https://github.github.com/gfm/)
-* Renders actual, "native" React DOM elements
-* Allows you to escape or skip HTML (try toggling the checkboxes above)
-* If you escape or skip the HTML, no `dangerouslySetInnerHTML` is used! Yay!
-
-## HTML block below
-
-<blockquote>
-  This blockquote will change based on the HTML settings above.
-</blockquote>
-
-## How about some code?
-```js
-var React = require('react');
-var Markdown = require('react-markdown');
-
-React.render(
-  <Markdown source="# Your markdown here" />,
-  document.getElementById('content')
-);
-```
-
-Pretty neat, eh?
-
-## Tables?
-
-| Feature   | Support |
-| --------- | ------- |
-| tables    | ✔ |
-| alignment | ✔ |
-| wewt      | ✔ |
-
-## More info?
-
-Read usage information and more on [GitHub](//github.com/rexxars/react-markdown)
-
----------------
-
-A component by [Espen Hovlandsdal](https://espen.codes/)`
-const Gear = () => {
-  return (
-    <Markdown source={dipshoot} />
-  );
+export default class Gear extends React.Component {
+  componentDidMount() {
+    console.log(jQuery(html).text());
+  }
+  render() {
+    return (
+      <div className="white">
+      <pre>
+        <code dangerouslySetInnerHTML={{ __html: html }}></code>
+      </pre>
+      <p>My Ridiculosy expensive Gear page</p>
+      <style jsx>{`.white {background-color : brown}`}</style>
+      </div>
+    );
+  }
 }
-export default Gear;

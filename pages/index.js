@@ -1,4 +1,3 @@
-import Layout from '../components/MyLayout.js'
 import Link from 'next/link';
 import Header from "../components/Header.js";
 import Table from "../components/Table.js";

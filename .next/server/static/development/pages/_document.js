@@ -2286,8 +2286,12 @@ function (_Document) {
         integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
         crossOrigin: "anonymous"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        href: "themes/prism.css",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-funky.css",
         rel: "stylesheet"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
+        id: "prism-script",
+        type: "text/javascript",
+        src: "https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+python"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         href: "/static/index.css",
         type: "text/css",

@@ -51,7 +51,7 @@ export default function Solutions() {
       </div>
       <div className="container-2">
         <div className="a-main">
-          <div className="a-articles">
+          <div className="a-article">
               {getPosts().map(post => (
                 <div className="a-article">
                   <time className="a-article-time">Whateves</time>
