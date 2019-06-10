@@ -10,9 +10,15 @@ nvm -v
 npm -v
 ```
 
-Download the zip file of this repo and extract it
+Download the zip file of this repo and extract it with 
+
 ```bash
-cd 'Directory name'
+unzip Frontend-Of-The-Personal-Website-master.zip
+```
+
+The switch to This Directorieee
+```bash
+cd Frontend-Of-The-Personal-Website-master
 ```
 # Running the Damm Thing
 ```bash
