@@ -3,6 +3,13 @@
 ## Setup
 On a Linux terminal install node & npm
 
+To check whether they are installed use commands like 
+
+```bash
+nvm -v
+npm -v
+```
+
 Download the zip file of this repo and extract it
 ```bash
 cd 'Directory name'
