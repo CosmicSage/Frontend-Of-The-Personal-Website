@@ -15,8 +15,14 @@ Download the zip file of this repo and extract it with
 ```bash
 unzip Frontend-Of-The-Personal-Website-master.zip
 ```
+If using WSL and you downloaded into your Downloads file then `cd` all the way to the beiginig by cd .. multiple times and then do
+```bash
+cd /mnt/d/users/admin/Downloads
+```
+if your Downlods folder is in C drive then replace the above command will be silghtly different
 
-The switch to This Directorieee
+
+Then switch to This Directorieee
 ```bash
 cd Frontend-Of-The-Personal-Website-master
 ```
